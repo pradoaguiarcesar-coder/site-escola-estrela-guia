@@ -40,7 +40,7 @@
     {"@type":"Question","name":"A escola tem transporte escolar?","acceptedAnswer":{"@type":"Answer","text":"A escola não opera van própria, mas indica parceiros de transporte escolar terceirizado que atendem a região de Itaquera."}},
     {"@type":"Question","name":"Qual o valor da mensalidade da Escola Estrela Guia?","acceptedAnswer":{"@type":"Answer","text":"A mensalidade tem valor a partir de R$ 600,00, podendo variar conforme a série. A secretaria confirma o valor exato para a turma do seu filho durante a visita."}},
     {"@type":"Question","name":"Há quanto tempo a Escola Estrela Guia atua em Itaquera?","acceptedAnswer":{"@type":"Answer","text":"A Escola Estrela Guia foi fundada em 1972 e está há mais de 50 anos formando alunos na zona leste de São Paulo."}},
-    {"@type":"Question","name":"A Escola Estrela Guia tem bons resultados acadêmicos?","acceptedAnswer":{"@type":"Answer","text":"Sim. A escola tem altos índices de aprovação no ENEM e nos vestibulinhos das ETECs para concluintes do 9º ano, e já foi destaque em reportagem de jornal que ranqueou as escolas da Grande São Paulo, ficando na 41ª posição entre todas as avaliadas."}}
+    {"@type":"Question","name":"A Escola Estrela Guia tem bons resultados acadêmicos?","acceptedAnswer":{"@type":"Answer","text":"Sim. A escola tem bons índices de aprovação no ENEM e nos vestibulinhos das ETECs para concluintes do 9º ano. Em levantamento do Blog do Enem sobre o ENEM 2017 entre escolas da capital paulista, a Escola Estrela Guia aparece com média 582 — um retrato histórico do desempenho da escola."}}
   ]
 }
 </script>
@@ -113,7 +113,7 @@ header h1 em{font-style:normal;color:#FFD166}
 .card p{color:var(--cinza);font-size:.96rem}
 
 /* NIVEIS */
-.niveis{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.niveis{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:48px}
 .nivel{border-radius:var(--radius);padding:32px 28px;color:#fff;position:relative;overflow:hidden;background:linear-gradient(150deg,var(--azul),var(--azul-esc))}
 .nivel.alt{background:linear-gradient(150deg,var(--vermelho),var(--vermelho-esc))}
 .nivel h3{font-size:1.2rem;margin-bottom:8px}
@@ -263,12 +263,16 @@ footer a:hover{color:#fff}
 <section class="sec" id="niveis" style="background:var(--areia)">
   <div class="wrap">
     <span class="tag">Ensino</span>
-    <h2 class="sec-title">Da primeira infância ao vestibular</h2>
+    <h2 class="sec-title">Nosso sistema de ensino</h2>
+    <p class="sec-sub">A Escola Estrela Guia atende da Educação Infantil (a partir de 4 anos) ao Ensino Médio, em período parcial, com o material do Sistema COC em todas as etapas.</p>
+    <p class="sec-sub" style="margin-top:16px">Nossa escola é parceira do <a href="https://www.coc.com.br" target="_blank" rel="noopener" style="color:var(--vermelho);font-weight:600">COC</a>, sistema de ensino com mais de 60 anos de história e presente em mais de 500 escolas em todo o Brasil. Da Educação Infantil ao Ensino Médio, nossos alunos contam com material didático alinhado à BNCC, plataforma digital com cadernos interativos, videoaulas, avaliações e relatórios de desempenho — além do tradicional DNA Aprovador COC, referência em aprovações nos principais vestibulares do país.</p>
     <div class="niveis">
-      <div class="nivel rv"><span class="faixa">Educação Infantil</span><h3>Acolher e despertar</h3><p>Alfabetização e desenvolvimento socioemocional em um ambiente seguro e afetuoso, com adaptação acompanhada de perto pela coordenação.</p></div>
-      <div class="nivel alt rv"><span class="faixa">Ensino Fundamental</span><h3>Construir bases sólidas</h3><p>Rotina de estudos, formação de valores e acompanhamento individualizado nos anos iniciais e finais, com o material COC.</p></div>
-      <div class="nivel rv"><span class="faixa">Ensino Médio</span><h3>Preparar para o futuro</h3><p>Foco em vestibulares e ENEM, com simulados, plataforma digital e orientação para as escolhas da vida adulta.</p></div>
+      <div class="nivel rv"><span class="faixa">Educação Infantil</span><h3>Coleção Explorar</h3><p>Une o educar, o cuidar e o brincar em experiências lúdicas alinhadas à BNCC. Com os personagens Plugue e Amigos do COC, as crianças são apresentadas ao mundo da leitura, da escrita e do raciocínio lógico de forma leve e divertida, respeitando o ritmo de cada uma.</p></div>
+      <div class="nivel alt rv"><span class="faixa">Fundamental — Anos Iniciais</span><h3>Coleção Infinito</h3><p>Do 1º ao 5º ano, alia alfabetização sólida, desenvolvimento socioemocional e inglês desde o 1º ano. O material impresso é complementado por cadernos digitais, jogos educativos e videoaulas na plataforma Jornada COC.</p></div>
+      <div class="nivel rv"><span class="faixa">Fundamental — Anos Finais</span><h3>Coleção Infinito</h3><p>Do 6º ao 9º ano, mais de 750 conjuntos de atividades por ano, conteúdo interdisciplinar alinhado à BNCC e tecnologia integrada ao cotidiano do estudante — com avaliações periódicas e relatórios de desempenho que preparam a transição para o Ensino Médio.</p></div>
+      <div class="nivel alt rv"><span class="faixa">Ensino Médio</span><h3>Novo Ensino Médio COC</h3><p>Formação Geral Básica, Itinerários Formativos, Eletivas e Projeto de Vida na 1ª e 2ª séries. Na 3ª série, o consagrado Terceirão® COC: revisão completa, simulados, Laboratório de Redação com correção por competências e ferramentas como Observatório ENEM e Simulador SiSU.</p></div>
     </div>
+    <p style="margin-top:32px"><a class="btn btn-blue" href="https://www.coc.com.br" target="_blank" rel="noopener">Conheça o Sistema COC</a></p>
   </div>
 </section>
 
@@ -276,6 +280,7 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <span class="tag">Estrutura</span>
     <h2 class="sec-title">Espaços pensados para aprender e conviver</h2>
+    <p class="sec-sub">A escola funciona em prédio próprio na Vila Carmosina (Itaquera), com quadra poliesportiva coberta, refeitório, pátio coberto, parquinho e salas equipadas — confira cada ambiente abaixo.</p>
     <div class="galeria">
       <figure class="gitem tall rv"><img src="fotos/fachada2.jpg" alt="Fachada da Escola Estrela Guia em Itaquera"><figcaption>Prédio próprio na Vila Carmosina</figcaption></figure>
       <figure class="gitem rv"><img src="fotos/quadra.jpg" alt="Quadra poliesportiva coberta"><figcaption>Quadra poliesportiva coberta</figcaption></figure>
@@ -334,7 +339,7 @@ footer a:hover{color:#fff}
       <div class="faq-item rv"><h3>A escola tem transporte escolar?</h3><p>A escola não opera van própria, mas indica parceiros de transporte escolar terceirizado que atendem a região de Itaquera.</p></div>
       <div class="faq-item rv"><h3>Qual o valor da mensalidade?</h3><p>A mensalidade tem valor a partir de R$ 600,00, podendo variar conforme a série. A secretaria confirma o valor exato para a turma do seu filho durante a visita.</p></div>
       <div class="faq-item rv"><h3>Há quanto tempo a escola atua em Itaquera?</h3><p>A Escola Estrela Guia foi fundada em 1972 e está há mais de 50 anos formando alunos na zona leste de São Paulo.</p></div>
-      <div class="faq-item rv"><h3>A escola tem bons resultados acadêmicos?</h3><p>Sim. A Escola Estrela Guia tem altos índices de aprovação no ENEM e nos vestibulinhos das ETECs para concluintes do 9º ano, e já foi destaque em reportagem de jornal que ranqueou as escolas da Grande São Paulo, ficando na 41ª posição entre todas as avaliadas.</p></div>
+      <div class="faq-item rv"><h3>A escola tem bons resultados acadêmicos?</h3><p>Sim. A Escola Estrela Guia tem bons índices de aprovação no ENEM e nos vestibulinhos das ETECs para concluintes do 9º ano. Em levantamento do Blog do Enem sobre o ENEM 2017 entre escolas da capital paulista, a Escola Estrela Guia aparece com média 582 — um retrato histórico do desempenho da escola. <a href="https://blogdoenem.com.br/enem-escolas-de-sao-paulo/" target="_blank" rel="noopener">Fonte</a>.</p></div>
     </div>
   </div>
 </section>
@@ -378,7 +383,7 @@ footer a:hover{color:#fff}
         <h4>Redes sociais</h4>
         <a href="https://www.instagram.com/escolanovaestrelaguia" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.facebook.com/profile.php?id=100089551357790" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://g.page/r/CZ0HHYjTt-czEBM/review" target="_blank" rel="noopener">Avalie-nos no Google</a>
+        <a href="https://g.page/r/CZ0HHYjTt-czECE/review" target="_blank" rel="noopener">Avalie-nos no Google</a>
       </div>
     </div>
     <div class="f-bottom">
