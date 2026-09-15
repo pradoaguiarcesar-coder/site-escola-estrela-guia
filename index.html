@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!-- Google tag (gtag.js) - Google Ads AW-944743405 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-944743405"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-944743405');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Escola Estrela Guia | Escola Particular em Itaquera — Educação Infantil, Fundamental e Médio</title>
@@ -406,6 +414,19 @@ burger.onclick=()=>menu.classList.toggle('open');
 menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.15});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+<!-- Conversões Google Ads: cliques no WhatsApp e no telefone.
+     Preencha os rótulos (labels) das ações de conversão criadas no Google Ads. -->
+<script>
+const ADS_CONVERSOES={whatsapp:'',ligacao:''};
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;
+  const h=a.getAttribute('href');
+  const tipo=/wa\.me\/|whatsapp\.com/.test(h)?'whatsapp':h.startsWith('tel:')?'ligacao':null;
+  if(!tipo)return;
+  gtag('event',tipo==='whatsapp'?'clique_whatsapp':'clique_telefone',{link_url:h});
+  if(ADS_CONVERSOES[tipo])gtag('event','conversion',{send_to:'AW-944743405/'+ADS_CONVERSOES[tipo]});
+});
 </script>
 </body>
 </html>
