@@ -163,6 +163,7 @@ footer a:hover{color:#fff}
 .navlinks{gap:18px}
 .navlinks a{font-size:.88rem;white-space:nowrap}
 .brand{white-space:nowrap}
+.navrow{gap:28px}
 @media(max-width:1240px){
   .navlinks{position:fixed;inset:0;background:var(--azul-esc);flex-direction:column;justify-content:center;gap:22px;transform:translateX(100%);transition:.35s}
   .navlinks.open{transform:none}
