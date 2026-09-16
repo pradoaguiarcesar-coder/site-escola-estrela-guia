@@ -160,9 +160,10 @@ footer a:hover{color:#fff}
 }
 
 /* ===== Páginas internas (adicionado set/2026) ===== */
-.navlinks{gap:20px}
-.navlinks a{font-size:.9rem}
-@media(max-width:1080px){
+.navlinks{gap:18px}
+.navlinks a{font-size:.88rem;white-space:nowrap}
+.brand{white-space:nowrap}
+@media(max-width:1240px){
   .navlinks{position:fixed;inset:0;background:var(--azul-esc);flex-direction:column;justify-content:center;gap:22px;transform:translateX(100%);transition:.35s}
   .navlinks.open{transform:none}
   .navlinks a{color:#fff !important;font-size:1.15rem}
