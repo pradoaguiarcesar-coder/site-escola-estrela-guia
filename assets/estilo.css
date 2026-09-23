@@ -198,3 +198,12 @@ footer a:hover{color:#fff}
 .duas-col img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;height:auto}
 @media(max-width:900px){.duas-col{grid-template-columns:1fr}}
 a:focus-visible,button:focus-visible{outline:3px solid #FFD166;outline-offset:3px}
+
+/* Rodapé: títulos de coluna */
+footer .f-tit{margin-bottom:14px;font-size:1rem;color:#fff}
+/* Banner de cookies (LGPD) */
+#eg-cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:560px;margin:0 auto;background:#fff;color:var(--escuro);border-radius:14px;box-shadow:0 12px 40px rgba(14,23,64,.25);padding:16px 18px;font-size:.92rem;line-height:1.5}
+#eg-cookies a{color:var(--azul);text-decoration:underline}
+#eg-cookies .eg-ck-bt{display:flex;gap:10px;justify-content:flex-end;margin-top:10px}
+#eg-cookies button{font:inherit;font-weight:600;border-radius:999px;padding:9px 18px;cursor:pointer;border:1px solid var(--azul);background:#fff;color:var(--azul)}
+#eg-cookies .eg-ck-ok{background:var(--azul);color:#fff}
