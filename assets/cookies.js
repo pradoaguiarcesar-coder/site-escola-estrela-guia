@@ -1,6 +1,6 @@
 /* Banner de cookies (LGPD) + Google Consent Mode v2 — Escola Estrela Guia */
 (function(){
-  var GA4_ID = ''; // preencher com o ID do Google Analytics 4 (ex.: 'G-XXXXXXXXXX')
+  var GA4_ID = 'G-B1VRT1TM2F'; // Google Analytics 4 — Site Escola Estrela Guia
   var KEY='eg_cookies';
   function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
   function set(v){try{localStorage.setItem(KEY,v)}catch(e){}}
