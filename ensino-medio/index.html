@@ -39,10 +39,10 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@type": "School",
+   "@type": ["School", "LocalBusiness"],
    "@id": "https://www.escolanovaestrelaguia.com.br/#escola",
    "name": "Escola Estrela Guia",
-   "alternateName": "Escola Nova Estrela Guia",
+   "alternateName": ["Colégio Estrela Guia", "Escola Nova Estrela Guia"],
    "url": "https://www.escolanovaestrelaguia.com.br/",
    "logo": "https://www.escolanovaestrelaguia.com.br/fotos/logo.png",
    "image": "https://www.escolanovaestrelaguia.com.br/fotos/fachada1.jpg",
@@ -65,7 +65,10 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
    ],
    "email": "contato@escolanovaestrelaguia.com.br",
    "foundingDate": "1972",
-   "address": {
+   "geo": {"@type": "GeoCoordinates", "latitude": -23.540857, "longitude": -46.455089},
+  "hasMap": "https://maps.google.com/?cid=3740160134704072605",
+  "priceRange": "$$",
+  "address": {
     "@type": "PostalAddress",
     "streetAddress": "R. Porto Xavier, 153 - Vila Carmosina",
     "addressLocality": "São Paulo",
@@ -80,7 +83,8 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
    ],
    "sameAs": [
     "https://www.instagram.com/escolanovaestrelaguia",
-    "https://www.facebook.com/profile.php?id=100089551357790"
+    "https://www.facebook.com/profile.php?id=100089551357790",
+   "https://www.youtube.com/@escolaestrelaguiaitaquera"
    ]
   },
   {
@@ -215,6 +219,7 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
       <h2>Base acadêmica e rotina de estudo</h2>
       <p>O Ensino Médio da Escola Estrela Guia usa o <strong>Sistema COC</strong>, com material impresso e plataforma digital, e mantém o acompanhamento da coordenação até a última série. O objetivo é que o aluno construa uma rotina de estudos consistente e chegue preparado às provas que vai enfrentar — com o cuidado de uma <a href="/escola-particular-em-itaquera/">escola particular de bairro, em Itaquera desde 1972</a>, e turmas reduzidas em que cada estudante é conhecido pelo nome.</p>
 
+<figure style="margin:0 0 24px"><img src="/fotos/salas_sa10.jpg" alt="Sala de aula do Ensino Médio da Escola Estrela Guia, em Itaquera" loading="lazy" width="260" height="462" style="width:min(100%,320px);height:auto;border-radius:12px"><figcaption style="font-size:.9rem;opacity:.8;margin-top:6px">Sala de aula do Ensino Médio</figcaption></figure>
       <h2>Como é cada série</h2>
       <ul>
         <li><strong>1ª série:</strong> construção da base acadêmica e da rotina de estudo nas quatro áreas do conhecimento (Linguagens, Matemática, Ciências da Natureza e Ciências Humanas).</li>
@@ -244,6 +249,7 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
         <li><strong>Saída</strong> conforme o protocolo combinado com a família.</li>
       </ul>
 
+<figure style="margin:0 0 24px"><img src="/fotos/quadra_q3.jpg" alt="Quadra poliesportiva coberta usada pelos alunos do Ensino Médio da Escola Estrela Guia" loading="lazy" width="260" height="462" style="width:min(100%,320px);height:auto;border-radius:12px"><figcaption style="font-size:.9rem;opacity:.8;margin-top:6px">Quadra coberta: educação física e eventos do Ensino Médio</figcaption></figure>
       <h2>Iniciação científica, olimpíadas e Fab Lab</h2>
       <p>Toda a escola participa do <strong>projeto de iniciação científica</strong>, e no Ensino Médio os trabalhos ganham método: problema, hipótese, coleta de dados e apresentação. Os alunos participam das <strong>Olimpíadas Brasileiras de Matemática (OBMEP), de Geografia e de Biologia</strong>, e a <strong>parceria com o Fab Lab de Itaquera</strong> aproxima os estudantes de fabricação digital, programação e prototipagem — experiências que contam na hora de escolher uma carreira.</p>
 
@@ -326,7 +332,7 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
       </div>
     </div>
     <div class="f-bottom">
-      <span>© 2026 Escola Nova Estrela Guia · CNPJ 05.389.031/0001-08 · <a href="/politica-de-privacidade/" style="display:inline;color:inherit;text-decoration:underline">Política de privacidade</a> · <a href="#" data-cookies style="display:inline;color:inherit;text-decoration:underline">Preferências de cookies</a></span>
+      <span>© 2026 Escola Estrela Guia · CNPJ 05.389.031/0001-08 · <a href="/politica-de-privacidade/" style="display:inline;color:inherit;text-decoration:underline">Política de privacidade</a> · <a href="#" data-cookies style="display:inline;color:inherit;text-decoration:underline">Preferências de cookies</a></span>
       <span>R. Porto Xavier, 153 — Vila Carmosina, Itaquera, São Paulo/SP · Tel. (11) 2205-7997 · WhatsApp (11) 97429-1010</span>
     </div>
   </div>

@@ -39,10 +39,10 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@type": "School",
+   "@type": ["School", "LocalBusiness"],
    "@id": "https://www.escolanovaestrelaguia.com.br/#escola",
    "name": "Escola Estrela Guia",
-   "alternateName": "Escola Nova Estrela Guia",
+   "alternateName": ["Colégio Estrela Guia", "Escola Nova Estrela Guia"],
    "url": "https://www.escolanovaestrelaguia.com.br/",
    "logo": "https://www.escolanovaestrelaguia.com.br/fotos/logo.png",
    "image": "https://www.escolanovaestrelaguia.com.br/fotos/fachada1.jpg",
@@ -65,7 +65,10 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
    ],
    "email": "contato@escolanovaestrelaguia.com.br",
    "foundingDate": "1972",
-   "address": {
+   "geo": {"@type": "GeoCoordinates", "latitude": -23.540857, "longitude": -46.455089},
+  "hasMap": "https://maps.google.com/?cid=3740160134704072605",
+  "priceRange": "$$",
+  "address": {
     "@type": "PostalAddress",
     "streetAddress": "R. Porto Xavier, 153 - Vila Carmosina",
     "addressLocality": "São Paulo",
@@ -80,7 +83,8 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
    ],
    "sameAs": [
     "https://www.instagram.com/escolanovaestrelaguia",
-    "https://www.facebook.com/profile.php?id=100089551357790"
+    "https://www.facebook.com/profile.php?id=100089551357790",
+   "https://www.youtube.com/@escolaestrelaguiaitaquera"
    ]
   },
   {
@@ -265,7 +269,7 @@ gtag('consent','default',{ad_storage:c==='sim'?'granted':'denied',ad_user_data:c
       </div>
     </div>
     <div class="f-bottom">
-      <span>© 2026 Escola Nova Estrela Guia · CNPJ 05.389.031/0001-08 · <a href="/politica-de-privacidade/" style="display:inline;color:inherit;text-decoration:underline">Política de privacidade</a> · <a href="#" data-cookies style="display:inline;color:inherit;text-decoration:underline">Preferências de cookies</a></span>
+      <span>© 2026 Escola Estrela Guia · CNPJ 05.389.031/0001-08 · <a href="/politica-de-privacidade/" style="display:inline;color:inherit;text-decoration:underline">Política de privacidade</a> · <a href="#" data-cookies style="display:inline;color:inherit;text-decoration:underline">Preferências de cookies</a></span>
       <span>R. Porto Xavier, 153 — Vila Carmosina, Itaquera, São Paulo/SP · Tel. (11) 2205-7997 · WhatsApp (11) 97429-1010</span>
     </div>
   </div>
